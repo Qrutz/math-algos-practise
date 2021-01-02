@@ -17,8 +17,9 @@ largest = [0]
 
 
 # print(largest)
-for i in x:
+xd = ["Digg", "Nig", "Zigg"]
+
+for i in xd:
     for j in i:
-        if ([i]+[j]) > largest:
-            largest = ([i]+[j])
-print(largest)
+        for z in j:
+            print(z)
