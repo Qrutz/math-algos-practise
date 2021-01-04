@@ -64,3 +64,35 @@
 
 
 # print(findLongest(y))
+
+# arr1 = [3, 7, 2, 1]
+# arr2 = [6, 3, 4, 7]
+
+
+# def mergeSorted(a=arr1, a2=arr2):
+#     merged = []
+#     for i in range(len(a)):
+#         merged.append(a[i])
+#     for j in range(len(a2)):
+#         merged.append(a2[j])
+
+#     return sorted(merged)
+
+
+# print(mergeSorted())
+
+
+# Average word length
+#  sum(len(word)) / amount of words
+
+sentence1 = "Greetings summoners how you doing today sir, do u want to buy some fish"
+sentence2 = "Hoppie hooeee foooor soooore r w a s gadgsadf gasdf"
+
+
+def averageWords(s=sentence1):
+    x = s.split()
+    len_of_x = len(x)
+    print(len(s)/len(x))
+
+
+print(averageWords())
