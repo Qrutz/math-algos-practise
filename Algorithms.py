@@ -85,14 +85,33 @@
 # Average word length
 #  sum(len(word)) / amount of words
 
-sentence1 = "Greetings summoners how you doing today sir, do u want to buy some fish"
-sentence2 = "Hoppie hooeee foooor soooore r w a s gadgsadf gasdf"
+# sentence1 = "Greetings summoners how you doing today sir, do u want to buy some fish"
+# sentence2 = "Hoppie hooeee foooor soooore r w a s gadgsadf gasdf"
 
 
-def averageWords(s=sentence1):
-    x = s.split()
-    len_of_x = len(x)
-    print(len(s)/len(x))
+# def averageWords(s=sentence1):
+#     x = s.split()
+#     len_of_x = len(x)
+#     print(len(s)/len(x))
 
 
-print(averageWords())
+# print(averageWords())
+
+
+# def solution(num1, num2):
+#     return str(eval(num1) + eval(num2))
+
+
+# num1 = '364'
+# num2 = '1836'
+# print(solution(num1, num2))
+
+def bubbleSort(x):
+    for i in range(0, len(x)):
+        for j in range(i+1, len(x)):
+            if x[j] < x[i]:
+                x[j], x[i] = x[i], x[j]
+    return x
+
+
+print(bubbleSort([1, 7, 3, 2, 8, 2]))
