@@ -106,12 +106,36 @@
 # num2 = '1836'
 # print(solution(num1, num2))
 
-def bubbleSort(x):
-    for i in range(0, len(x)):
-        for j in range(i+1, len(x)):
-            if x[j] < x[i]:
-                x[j], x[i] = x[i], x[j]
-    return x
+# def bubbleSort(x):
+#     for i in range(0, len(x)):
+#         for j in range(i+1, len(x)):
+#             if x[j] < x[i]:
+#                 x[j], x[i] = x[i], x[j]
+#     return x
 
 
-print(bubbleSort([1, 7, 3, 2, 8, 2]))
+# print(bubbleSort([1, 7, 3, 2, 8, 2]))
+
+# def fizzbUZZ():
+#     for i in range(0, 100):
+#         if (i % 3 == 0) and (i % 5 == 0):
+#             print("fizzbuzz")
+#         elif (i % 3 == 0):
+#             print("fizz")
+#         elif (i % 5 == 0):
+#             print("buzz")
+#         else:
+#             print(i)
+#     return 100
+
+
+# print(fizzbUZZ())
+
+import fileinput
+
+
+lines = list(fileinput.input())
+for line in lines:
+    words = line.split()
+    lo, hi = [int(x) for x in words[0].split("-")]
+    print(words[0])
