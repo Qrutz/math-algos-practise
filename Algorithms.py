@@ -128,14 +128,12 @@
 #             print(i)
 #     return 100
 
-
-# print(fizzbUZZ())
-
 import fileinput
+print(fizzbUZZ())
 
 
 lines = list(fileinput.input())
 for line in lines:
     words = line.split()
     lo, hi = [int(x) for x in words[0].split("-")]
-    print(words[0])
+    print(lo, hi, words)
