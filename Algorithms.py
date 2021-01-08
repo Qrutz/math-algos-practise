@@ -127,13 +127,14 @@
 #         else:
 #             print(i)
 #     return 100
-
-import fileinput
-print(fizzbUZZ())
+# print(fizzbUZZ())
 
 
-lines = list(fileinput.input())
-for line in lines:
-    words = line.split()
-    lo, hi = [int(x) for x in words[0].split("-")]
-    print(lo, hi, words)
+# import fileinput
+
+
+# lines = list(fileinput.input())
+# for line in lines:
+#     words = line.split()
+#     lo, hi = [int(x) for x in words[0].split("-")]
+#     print(lo, hi, words)
